@@ -35,14 +35,14 @@ with tab1:
 
     st.subheader("🏠 Características Generales")
     
-    radio_input("Condicion 1, Proximidad a carreteras, vias, parques.. etc", [
+    radio_input("Condition 1", [
         "Artery", "Feedr", "Norm", "PosA", "PosN",
         "RRAe", "RRAn", "RRNe", "RRNn"
     ])
     datos["Lot Frontage"] = st.number_input("Frente del lote (pies)", 0, 313, 60)
     datos["Lot Area"] = st.number_input("Área del lote", 1300, 215245, 6000)
     radio_input("Land Contour", ["Low", "Lvl", "Bnk", "HLS"])
-    radio_input("Vecindario de la propiedad", [
+    radio_input("Neighborhood", [
         "Blmngtn", "Blueste", "BrDale", "BrkSide", "ClearCr", "CollgCr",
         "Crawfor", "Edwards", "Gilbert", "Greens", "GrnHill", "IDOTRR",
         "Landmrk", "MeadowV", "Mitchel", "NAmes", "NPkVill", "NWAmes",
@@ -59,7 +59,7 @@ with tab1:
     datos["Year Remod/Add"] = st.number_input("Año de remodelación", 1950, 2010, 2000)
 
     st.subheader("🏠 Techos y exteriores")
-    radio_input("Material exterior principal", [
+    radio_input("Exterior 1st", [
         "AsbShng", "AsphShn", "BrkComm", "BrkFace", "CBlock",
         "CemntBd", "HdBoard", "ImStucc", "MetalSd", "Plywood",
         "Stone", "Stucco", "VinylSd", "Wd Sdng", "WdShing"
