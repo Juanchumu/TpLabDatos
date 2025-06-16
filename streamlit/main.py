@@ -29,7 +29,7 @@ with tab1:
 
     # Categóricos con one-hot encoding simulado
     def radio_input(label, options):
-        seleccion = st.radio(label, options, key=label)
+        seleccion = st.selectbox(label, options, key=label)
         for op in options:
             datos[f"{label}_{op}"] = 1.0 if seleccion == op else 0.0
 
@@ -39,12 +39,12 @@ with tab1:
         "Stone", "Stucco", "VinylSd", "Wd Sdng", "WdShing"
     ])
 
-    radio_input("Condition 1", [
+    radio_input("Condicion 1, Proximidad a carreteras, vias, parques.. etc", [
         "Artery", "Feedr", "Norm", "PosA", "PosN",
         "RRAe", "RRAn", "RRNe", "RRNn"
     ])
 
-    radio_input("Neighborhood", [
+    radio_input("Vecindario de la propiedad", [
         "Blmngtn", "Blueste", "BrDale", "BrkSide", "ClearCr", "CollgCr",
         "Crawfor", "Edwards", "Gilbert", "Greens", "GrnHill", "IDOTRR",
         "Landmrk", "MeadowV", "Mitchel", "NAmes", "NPkVill", "NWAmes",
