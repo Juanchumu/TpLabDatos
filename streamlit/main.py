@@ -86,7 +86,7 @@ with tab1:
     datos["Full Bath"] = st.selectbox("Baños completos", [0,1, 2, 3, 4], index=1)
     datos["Half Bath"] = st.selectbox("Medios baños", [0,1, 2], index=0)
     datos["Kitchen Qual"] = st.selectbox("Calidad de la cocina", [1, 2, 3, 4, 5], index=3)
-    datos["TotRms AbvGrd"] = st.number_input("Total de habitaciones sobre tierra",  [2, 3, 4, 5, 6, 7, 8, 9,10,11,12,13,14,15], index=2)
+    datos["TotRms AbvGrd"] = st.selectbox("Total de habitaciones sobre tierra",  [2, 3, 4, 5, 6, 7, 8, 9,10,11,12,13,14,15], index=2)
 
     st.subheader("🔧 Funcionalidad y extras")
     datos["Fireplaces"] = st.selectbox("Cantidad de chimeneas", [0,1, 2, 3, 4], index=1)
