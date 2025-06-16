@@ -4,7 +4,7 @@ import joblib
 import pandas as pd
 
 # Cargar el modelo
-model = joblib.load("modelo_lgbm33c.pkl")
+model = joblib.load("/mount/src/tplabdatos/streamlit/modelo_lgbm33c.pkl")
 
 # Título general
 st.title("Predicción de precios de viviendas - Grupo 4")
