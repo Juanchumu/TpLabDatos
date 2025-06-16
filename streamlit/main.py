@@ -68,7 +68,7 @@ with tab1:
 
     st.subheader("🧍 Exterior")
 
-    datos["Exter Qual"] = st.selectbox("Calidad exterior", [2, 3, 4, 5], index=1)
+    datos["Exter Qual"] = st.selectbox("Calidad exterior", [1,2, 3, 4, 5], index=1)
 
     st.subheader("🧱 Sótano")
 
@@ -148,5 +148,5 @@ with tab3:
 
     if st.button("Predecir valor de casa"):
         prediccion = model.predict(input_df)[0]
-        st.success(f"Predicción del precio de la casa: ${prediccion:,.2f}")
+        st.success(f"Predicción del precio de la casa: ${prediccion:,.2f}   ")
         st.caption("La predicción tiene un margen de incertidumbre del 11.43% respecto al valor promedio real.")
