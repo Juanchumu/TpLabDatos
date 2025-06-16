@@ -33,7 +33,7 @@ with tab1:
         for op in options:
             datos[f"{label}_{op}"] = 1.0 if seleccion == op else 0.0
 
-    radio_input("Exterior 1st", [
+    radio_input("Material exterior principal", [
         "AsbShng", "AsphShn", "BrkComm", "BrkFace", "CBlock",
         "CemntBd", "HdBoard", "ImStucc", "MetalSd", "Plywood",
         "Stone", "Stucco", "VinylSd", "Wd Sdng", "WdShing"
