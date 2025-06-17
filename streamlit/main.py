@@ -149,4 +149,4 @@ with tab3:
     if st.button("Predecir valor de casa"):
         prediccion = model.predict(input_df)[0]
         st.success(f"Predicción del precio de la casa: ${prediccion:,.2f}   ")
-        st.caption("La predicción tiene un margen de incertidumbre del 11.43% respecto al valor promedio real.")
+        st.caption("La predicción tiene un margen de incertidumbre del 12.91% respecto al valor promedio real.")
